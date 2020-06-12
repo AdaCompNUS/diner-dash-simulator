@@ -1,44 +1,21 @@
 ## Diner Dash Env
 
-![alt text](diner_dash.png)
-
-The player is running a restaurant by controlling a waitress to serve customers as many as possible. As shown in the picture,
-the restaurant has 6 tables with different sizes and up to 7 waiting groups, on the left side and with different sizes, to be
-served. For each group of people, the player needs to allocate a table for them, collect orders, submit orders, pick up food,
-serve food, collect bills, clean table and finally return the dish to the dish collection point. There is a happiness value of each group of people, represented in the form of hearts, and the
-happiness value will decrease if they wait too long. Once the happiness value reaches zero, the customer runs away, and the
-player loses one star. There is a maximum of 5 stars of each player, and the game ends when the player loses five groups
-of customers.
-
-Diner Dash is a challenging task, with high dimensional action space, high
-dimensional state space, infinite horizon, hierarchical structure
-and requires sub-tasks to be completed in parallel. Such a
-tough task gives a better training environment which is closer
-to the real-world problems.
-
-#### To Try with GUI
-
-```
-Drag the swf.html into the chrome broswer
-OR
-Open the DinerDash.swf directly.
-```
-
 #### To Install
 
 ```
 pip install more_itertools
-pip install gym
-pip install -e DinerDashEnv
+pip install -e .
 ```
+
+
+
 
 
 #### To Use
 
 ```
-import gym
-
-env = gym.make('diner_dash:DinerDash-v0').unwrapped
+game_name = 'diner_dash:DinerDash-v0'
+env = gym.make(game_name).unwrapped
 env.flash_sim = False
 
 state = env.reset()
