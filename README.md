@@ -2,6 +2,8 @@
 
 ![alt text](diner_dash.png)
 
+Diner Dash is a benchmark task for training reinforcement learning (RL) and imitation learning (IL) polices in the domain of high dimensional action space.
+
 The player is running a restaurant by controlling a waitress to serve customers as many as possible. As shown in the picture,
 the restaurant has 6 tables with different sizes and up to 7 waiting groups, on the left side and with different sizes, to be
 served. For each group of people, the player needs to allocate a table for them, collect orders, submit orders, pick up food,
