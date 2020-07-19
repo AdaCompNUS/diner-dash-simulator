@@ -105,7 +105,7 @@ class DinerDashEnv(gym.Env):
                 move_to_table(env, action)
         """
 
-        self.low_state = np.array([0] * 40, dtype=np.float32)
+        self.low_state = np.array([-20] * 40, dtype=np.float32)
         self.high_state = np.array([20] * 40, dtype=np.float32)
 
         self.viewer = None
