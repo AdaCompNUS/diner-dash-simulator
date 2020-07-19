@@ -1,7 +1,7 @@
 import random
-from queue import Queue
-
-import more_itertools as mit
+import numpy as np
+# from queue import Queue
+# import more_itertools as mit
 
 from copy import deepcopy
 
@@ -257,7 +257,7 @@ class DinerDashVirtualEnv:
             # 7-12 food_1 - food_6
             # 13-18 dish_1 - dish_6
 
-        return state
+        return np.array(state)
 
     def duplicate(self):
         return deepcopy(self)
