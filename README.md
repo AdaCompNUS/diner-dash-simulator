@@ -52,6 +52,12 @@ env.env.print() # inspect all states
 env_tem = env.env.duplicate() # duplicate env for planning
 ```
 
+#### To Get Heuristic Policy
+This heuristic policy has an averaged score about 9921 over 100 runs.
+
+```shell script
+python heuristic_policy.py
+```
 
 
 #### State Space
